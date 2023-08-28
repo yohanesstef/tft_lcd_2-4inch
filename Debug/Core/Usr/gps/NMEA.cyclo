@@ -1,0 +1,2 @@
+../Core/Usr/gps/NMEA.c:31:5:decodeGGA	24
+../Core/Usr/gps/NMEA.c:196:5:decodeRMC	15

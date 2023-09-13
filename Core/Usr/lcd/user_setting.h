@@ -34,7 +34,7 @@
 #define D5_PIN GPIO_PIN_5
 #define D6_PORT GPIOB
 #define D6_PIN GPIO_PIN_6
-#define D7_PORT GPIOB
+#define D7_PORT GPIOA
 #define D7_PIN GPIO_PIN_7
 
 
@@ -66,16 +66,16 @@ extern TIM_HandleTypeDef htim1;
  *
  */
   #define write_8(d) { \
-   GPIOA->BSRR = 0b1000000000000000 << 16; \
+   GPIOA->BSRR = 0b1000000010000000 << 16; \
    GPIOB->BSRR = 0b0000001111111000 << 16; \
-   GPIOA->BSRR = (((d) & (1<<2)) << 13);\
+   GPIOA->BSRR = (((d) & (1<<2)) << 13) \
+			   | (((d) & (1<<7)) << 0);\
    GPIOB->BSRR = (((d) & (1<<0)) << 9) \
-               | (((d) & (1<<1)) << 8) \
+               | (((d) & (1<<1)) << 7) \
 			   | (((d) & (1<<3)) << 0) \
 			   | (((d) & (1<<4)) << 0) \
 			   | (((d) & (1<<5)) << 0) \
-			   | (((d) & (1<<6)) << 0) \
-			   | (((d) & (1<<7)) << 0); \
+			   | (((d) & (1<<6)) << 0); \
     }
 
 
@@ -99,7 +99,7 @@ extern TIM_HandleTypeDef htim1;
                            | ((GPIOB->IDR & (1<<4)) >> 0) \
                            | ((GPIOB->IDR & (1<<5)) >> 0) \
                            | ((GPIOB->IDR & (1<<6)) >> 0) \
-                           | ((GPIOB->IDR & (1<<7)) >> 0)))
+                           | ((GPIOA->IDR & (1<<7)) >> 0)))
 
 
 

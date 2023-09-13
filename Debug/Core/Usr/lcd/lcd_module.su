@@ -1,0 +1,2 @@
+../Core/Usr/lcd/lcd_module.c:16:6:lcd_init	16	static
+../Core/Usr/lcd/lcd_module.c:46:1:lcd_touchscreen_routine	8	static

@@ -11,6 +11,6 @@
 ../Core/Usr/lcd/lcd_touch.c:192:13:GPIO_InterruptMode	32	static
 ../Core/Usr/lcd/lcd_touch.c:234:19:LCD_SetMode	16	static
 ../Core/Usr/lcd/lcd_touch.c:253:20:LCD_Touch_Read	24	static
-../Core/Usr/lcd/lcd_touch.c:284:6:LCD_Touch_OnDown	4	static
-../Core/Usr/lcd/lcd_touch.c:295:6:LCD_Touch_OnUp	4	static
-../Core/Usr/lcd/lcd_touch.c:312:16:LCD_Touch_GetState	4	static
+../Core/Usr/lcd/lcd_touch.c:286:6:LCD_Touch_OnDown	4	static
+../Core/Usr/lcd/lcd_touch.c:297:6:LCD_Touch_OnUp	4	static
+../Core/Usr/lcd/lcd_touch.c:314:16:LCD_Touch_GetState	4	static

@@ -32,12 +32,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  ../Core/Inc/adc.h ../Core/Inc/main.h ../Core/Inc/dma.h ../Core/Inc/tim.h \
  ../Core/Inc/usart.h ../Core/Inc/gpio.h \
- /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/fonts.h \
- /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/user_setting.h \
+ /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/lcd_module.h \
+ /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/lcd_touch.h \
  /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/tft.h \
  /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/fonts.h \
  /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/functions.h \
- /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/lcd_touch.h \
+ /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/user_setting.h \
  /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/server.h \
  /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lora.h \
  /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/gps/gps_M8N.h \
@@ -81,12 +81,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/tim.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/gpio.h:
-/home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/fonts.h:
-/home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/user_setting.h:
+/home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/lcd_module.h:
+/home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/lcd_touch.h:
 /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/tft.h:
 /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/fonts.h:
 /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/functions.h:
-/home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/lcd_touch.h:
+/home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lcd/user_setting.h:
 /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/server.h:
 /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/lora.h:
 /home/yohanes/STM32CubeIDE/tft_lcd_2-4inch/Core/Usr/gps/gps_M8N.h:

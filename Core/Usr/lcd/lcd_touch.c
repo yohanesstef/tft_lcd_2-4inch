@@ -34,7 +34,7 @@
 #define YP_Pin	GPIO_PIN_4
 #define XM_Port GPIOA
 #define XM_Pin	GPIO_PIN_5
-#define XP_Port GPIOB
+#define XP_Port GPIOA
 #define XP_Pin	GPIO_PIN_7
 #define YP_EXTI	EXTI4_IRQn
 
@@ -178,12 +178,12 @@ static void GPIO_DrawMode() {
 
 	/*Configure GPIO pins: PA1 PA4 PA8 */
 //	GPIO_InitStruct.Pin = GPIO_PIN_1 | GPIO_PIN_4 | GPIO_PIN_8;
-	GPIO_InitStruct.Pin = YP_Pin | XM_Pin;
+	GPIO_InitStruct.Pin = YP_Pin | XM_Pin | XP_Pin;
 	HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 	/*Configure GPIO data pin PB10 */
 //	GPIO_InitStruct.Pin = GPIO_PIN_10;
-	GPIO_InitStruct.Pin = YM_Pin | XP_Pin;
+	GPIO_InitStruct.Pin = YM_Pin;
 	HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 }
 
@@ -264,6 +264,8 @@ LCD_TouchReadState LCD_Touch_Read(LCD_TouchPoint* p) {
 	}
 
 	uint32_t y = touchY();
+//	p->x = x*1000;
+//	p->y = y*1000;
 
 	p->x = (int16_t) ((1 - fclamp(adc_norm_x(x), 0.0f, 1.0f)) * TFTWIDTH);
 	p->y = (int16_t) ((1 - fclamp(adc_norm_y(y), 0.0f, 1.0f)) * TFTHEIGHT);

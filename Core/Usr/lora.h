@@ -10,6 +10,11 @@
 
 #include "main.h"
 #include "usart.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "gps_M8N.h"
+#include "math.h"
+#include "string.h"
 
 #define M0_Port 	GPIOA
 #define M0_Pin 		GPIO_PIN_8
@@ -59,5 +64,6 @@ void lora_clear_buffer();
 void lora_complete_task(unsigned long timeout);
 void lora_receive_routine();
 void lora_wireless_transmit_routine();
+void lora_encode_gps(void);
 
 #endif /* INC_LORA_H_ */

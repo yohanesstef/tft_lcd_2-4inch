@@ -20,6 +20,7 @@
 #include "main.h"
 #include "adc.h"
 #include "dma.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -102,43 +103,14 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USART6_UART_Init();
   MX_USART2_UART_Init();
+  MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim1);
 
-  server_init(&huart6);
-  lora_init(&huart1);
+//  server_init(&huart6);
   Ringbuf_init();
-
-//  flag = 1;
-//  ID = readID();
-//  HAL_Delay(100);
-//  flag = 2;
-//
-//  tft_init(ID);
-//  flag = 3;
-//  setRotation(0);
-//
-//  fillScreen(BLACK);
-//
-//  fillScreen(BLACK);
-//
-//  setRotation(0);
-//  testFillScreen();
-////  testLines(CYAN);
-////  testFastLines(RED, BLUE);
-////  testFilledCircles(10, MAGENTA);
-////  testCircles(10, WHITE);
-////  scrollup(100);
-////  invertDisplay(1);
-//  fillScreen(WHITE);
-//  printnewtstr(100, RED, &mono9x7bold, 3, "HELLO");
-////  fillRect(10, 10, 100, 200, WHITE);
-//  flag = 4;
-//
-//  LCD_Touch_Init(&hadc1, ADC_CHANNEL_7, &hadc1, ADC_CHANNEL_8);
-//  LCD_SetMode(LCD_MODE_TOUCH);
-//
-//  flag = 5;
+  lora_init(&huart1);
+//  lcd_init();
 
   /* USER CODE END 2 */
 
@@ -149,22 +121,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//	  LCD_SetMode(LCD_MODE_TOUCH);
-//	  if (LCD_Touch_Read(&p) == LCD_TOUCH_READ_SUCCESS) {
-////		  LCD_Touch_Draw_ConnectLastPoint(&p);
-////		  LCD_Touch_Draw_PrintInfo();
-//		  flag++;
-//	  }
-//	  if ((p.x < 200) & (p.x > 150) & (p.y < 200) & (p.y > 150)){
-//		  p.x = 0;
-//		  p.y = 0;
-//		  LCD_SetMode(LCD_MODE_DRAW);
-//		  testLines(CYAN);
-//	  }
+//	  lcd_touchscreen_routine();
 //	  server_transmit_routine();
 //	  lora_receive_routine();
-	  lora_wireless_transmit_routine();
+//	  lcd_touchscreen_routine();
 	  gps_GGA_routine();
+	  lora_wireless_transmit_routine();
 	  flag++;
 //	  HAL_Delay(100);
 //	  server_receive_restart();

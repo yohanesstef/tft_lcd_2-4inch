@@ -31,9 +31,9 @@ Core/Usr/lcd/lcd_module.o: ../Core/Usr/lcd/lcd_module.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- ../Core/Usr/lcd/lcd_touch.h ../Core/Usr/lcd/tft.h \
- ../Core/Usr/lcd/fonts.h ../Core/Usr/lcd/functions.h \
- ../Core/Usr/lcd/user_setting.h
+ ../Core/Inc/adc.h ../Core/Inc/main.h ../Core/Usr/lcd/lcd_touch.h \
+ ../Core/Usr/lcd/tft.h ../Core/Usr/lcd/fonts.h \
+ ../Core/Usr/lcd/functions.h ../Core/Usr/lcd/user_setting.h
 ../Core/Usr/lcd/lcd_module.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -67,6 +67,8 @@ Core/Usr/lcd/lcd_module.o: ../Core/Usr/lcd/lcd_module.c \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
+../Core/Inc/adc.h:
+../Core/Inc/main.h:
 ../Core/Usr/lcd/lcd_touch.h:
 ../Core/Usr/lcd/tft.h:
 ../Core/Usr/lcd/fonts.h:
